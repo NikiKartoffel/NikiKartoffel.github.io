@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS.css">
+		<title>
+			2.Rätsel
+		</title>
+		
+	</head>
+  
+	<body>
+	<center><div class="box"> <b>Binärsystem</b> <p class="klein"> Trag das Ergebnis der Ersten Aufgabe ein! Ihr braucht dieses Ergebniss!</p><b>8 4 2 1</b> <p class="text">0 <input type="text" id="code" name="fname"> 0 1</p>
+ <button onclick="ok()" class="order">Bestätigen</button></div></center>
+
+	</body>
+   	<script>
+	function ok() {
+		var code = document.getElementById("code").value;
+		if(code==1){
+			window.location.replace('Richtig2.html');
+		}
+		else{
+			window.location.replace('Falsch2.html');
+		}
+
+	}
+	</script>
+  
+</html>

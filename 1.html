@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS.css">
+		<title>
+			1.Rätsel
+		</title>
+		
+	</head>
+  
+	<body>
+  
+		<center><div class="box"><br>9 + 3 = 12<br> 15 - 7 = 8 <br> 1 + 4 = 5<br> <form action="/action_page.php">
+</form>   <input type="text" id="first" name="fname"> - 8 =<label for="lname"></label>
+  <input type="text" id="second" name="lname"> <br>
+ <button onclick="submit()" class="order">Bestätigen</button></div></center>
+ 
+   	<script>
+
+		function submit() {
+            var first = document.getElementById("first").value;
+			var second = document.getElementById("second").value;
+			if(first==9 && second==1){
+			window.location.replace('Richtig.html');
+			}
+			else{
+			window.location.replace('Falsch.html');
+			}
+			}
+	</script>
+
+	
+	</body>
+
+  
+</html>
